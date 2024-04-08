@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    tools:context=".userinterface.activities.SettingsActivity">
+
+    <TableRow>
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+            <LinearLayout
+                android:id="@+id/lifeStoryLineTexts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lifeStoryLines"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/showLifeStorySettings" />
+            </LinearLayout>
+            <Switch
+                android:id="@+id/lifeStoryLinesSwitch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignBottom="@id/lifeStoryLineTexts"
+                android:background="@color/colorBlack" />
+
+        </RelativeLayout>
+    </TableRow>
+
+    <TableRow>
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content">
+            <LinearLayout
+                android:id="@+id/familyTreeLineTexts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/familyTreeLines"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/showFamilyTreeLines" />
+            </LinearLayout>
+            <Switch
+                android:id="@+id/familyTreeLinesSwitch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignBottom="@id/familyTreeLineTexts"
+                android:background="@color/colorBlack" />
+        </RelativeLayout>
+    </TableRow>
+
+    <TableRow>
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" >
+            <LinearLayout
+                android:id="@+id/spouseLineTexts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/spouseLines"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/showSpouseLines" />
+            </LinearLayout>
+            <Switch
+                android:id="@+id/spouseLinesSwitch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignBottom="@id/spouseLineTexts"
+                android:background="@color/colorBlack" />
+        </RelativeLayout>
+    </TableRow>
+
+    <TableRow>
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" >
+            <LinearLayout
+                android:id="@+id/fathersSideTexts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fathersSideFilter"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/filterFathersSideSetting" />
+            </LinearLayout>
+            <Switch
+                android:id="@+id/fathersSideSwitch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignBottom="@id/fathersSideTexts"
+                android:background="@color/colorBlack" />
+        </RelativeLayout>
+    </TableRow>
+
+    <TableRow>
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" >
+            <LinearLayout
+                android:id="@+id/mothersSideTexts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mothersSideFilter"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/filterMothersSideSetting" />
+            </LinearLayout>
+            <Switch
+                android:id="@+id/mothersSideSwitch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignBottom="@id/mothersSideTexts"
+                android:background="@color/colorBlack" />
+        </RelativeLayout>
+    </TableRow>
+
+    <TableRow>
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" >
+            <LinearLayout
+                android:id="@+id/maleEventsTexts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/maleEventsFilter"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/filterGenderSetting" />
+            </LinearLayout>
+            <Switch
+                android:id="@+id/maleEventsSwitch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignBottom="@id/maleEventsTexts"
+                android:background="@color/colorBlack" />
+        </RelativeLayout>
+    </TableRow>
+
+    <TableRow>
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" >
+            <LinearLayout
+                android:id="@+id/femaleEventsTexts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/femaleEventsFilter"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/filterGenderSetting" />
+            </LinearLayout>
+            <Switch
+                android:id="@+id/femaleEventsSwitch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignBottom="@id/femaleEventsTexts"
+                android:background="@color/colorBlack" />
+        </RelativeLayout>
+    </TableRow>
+
+    <TableRow>
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" >
+            <LinearLayout
+                android:id="@+id/logoutTexts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/logout"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/logoutView" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignBottom="@id/logoutTexts"
+                android:background="@color/colorBlack" />
+        </RelativeLayout>
+    </TableRow>
+</TableLayout>
